@@ -5,6 +5,15 @@ sobrescrever as configurações do beon.
 classe declarada, e sobrescrevi com as novas estilizações, então eu fiz toda a estilização nas classes já existentes sobrescrevendo-as 
 eu não escrevi nenhuma classe nova;
 eu poderia incluir a tag <b> no titulo pra colocar em bold a palavra carrocel em "Showcase <b> carousel </b>  default slider, mas não o fiz, devido ao regulamento.
+*/
+
+/*Variáveis */
+:root {
+    --verde: #4cbca8;
+    --vermelho: #ff0000;
+    --branco: #fff;
+  }
+
 
 /* ajusta o tamanho e o positionamento da caixa principal da página*/
 .beon-slider{
@@ -40,7 +49,7 @@ eu poderia incluir a tag <b> no titulo pra colocar em bold a palavra carrocel em
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    background-color: red;
+    background-color: var(--vermelho);
 }
 
 .tns-slide-active{
@@ -110,15 +119,15 @@ eu poderia incluir a tag <b> no titulo pra colocar em bold a palavra carrocel em
 }
 
 .value{
-    color: #4cbca8;
+    color: var(--verde);
 }
 
 .beon-button--primary{
     display: block;
     box-sizing: border-box;
-    background-color: white;
+    background-color: var(--branco);
     border: 2px;
-    border-color: #4cbca8;
+    border-color: var(--verde);
     border-style: solid;
     width: 95%;
     margin-left: 2.5%;
@@ -140,5 +149,5 @@ eu poderia incluir a tag <b> no titulo pra colocar em bold a palavra carrocel em
 
 .beon-slider .tns-nav button[data-nav].tns-nav-active{
     background-color: transparent;
-    box-shadow: inset 0 0 0 2px #4cbca8;
+    box-shadow: inset 0 0 0 2px var(--verde);
 }
