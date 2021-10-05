@@ -1,0 +1,147 @@
+/*Oi com exceção de uma borda pontilhada na classe beon-container, é eu não alterei nada no código.
+/*Eu criei um arquivo de style.css na mesma do sample.html, e declare ele abaixo do padrão declarado(beon), que é pra ele ser excutado por último e assim 
+sobrescrever as configurações do beon.
+/*E a partir dai eu fui nos elementos chaves onde eram necessarias as novas estilizações, e em todos eles eu peguei a ultima 
+classe declarada, e sobrescrevi com as novas estilizações, então eu fiz toda a estilização nas classes já existentes sobrescrevendo-as 
+eu não escrevi nenhuma classe nova;
+
+
+/* ajusta o tamanho e o positionamento da caixa principal da página*/
+.beon-slider{
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+
+.beon-slider .tns-ovh{
+    width: 100%;
+    margin:0px;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}    
+
+.tns-ovh .tns-inner{
+    width: calc(100% - 100px);
+}
+
+/* Percentual de desconto arrendonda a caixa e posiciona*/
+.beon-slider .beon-showcase__item-badge--off{
+    margin-top: 10px;
+    margin-left: 20px;
+    padding: 10px;
+    padding-top: 8px;
+    padding-bottom: 14px;
+    width: 20px;
+    height: 20px;
+    border-radius: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+}
+
+.tns-slide-active{
+    margin-left: 20px;
+}
+
+/* Percentual desativa a visualização do valor da em dinheiro do desconto*/
+.beon-slider .beon-showcase__item-badge--off-value{
+    display: none;
+}
+
+.beon-slider .beon-showcase__item-badge--off-value .currency{
+    display: none;
+}
+
+.beon-slider .beon-showcase__item-badge--off-value .value{
+    display: none;
+}
+
+.beon-slider .beon-showcase__item-badge--off .percent{
+    display: block;
+    text-align: center;
+}
+
+.beon-slider .beon-showcase__item-badge--off .null{
+    display: block;
+    text-align: center;
+}
+
+.beon-slider .beon-showcase__item-image {
+    margin-top: 0px;
+    height: 320px;
+    width: 260px;
+    padding: 10px;
+}
+
+.beon-slider .beon-showcase__item-image img{
+    margin-top: -12px;
+    width: 100%;
+}
+
+
+.beon-showcase__item-title {
+    position: absolute;
+    margin-top: 340px;
+    font-size: 16px;
+    width: 95%;
+    font-weight: normal;
+    white-space: pre-wrap;
+}
+
+.beon-showcase__item-price--from{
+    display: block;
+    margin-top: 10px;
+}
+
+.beon-showcase__item-price--to{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 4px;
+}
+
+.beon-showcase__item-installments{
+    display: block;
+    margin-top: 5px;
+}
+
+
+.value{
+    color: #4cbca8;
+    
+}
+
+.beon-button--primary{
+    display: block;
+    box-sizing: border-box;
+    background-color: white;
+    border: 2px;
+    border-color: #4cbca8;
+    border-style: solid;
+    width: 95%;
+    margin-left: 2.5%;
+    margin-bottom: 10px;
+}
+
+.beon-showcase__head{
+    display: none;
+}
+
+
+ .priceFinalParcelado{
+    display: none;
+ }
+
+ .beon-showcase__item-price-box--simple{
+ display:  block;
+ margin-top: 27px;
+}
+
+.beon-slider .tns-nav button[data-nav].tns-nav-active{
+    background-color: transparent;
+    box-shadow: inset 0 0 0 2px #4cbca8;
+}
