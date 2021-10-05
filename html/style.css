@@ -4,7 +4,7 @@ sobrescrever as configurações do beon.
 /*E a partir dai eu fui nos elementos chaves onde eram necessarias as novas estilizações, e em todos eles eu peguei a ultima 
 classe declarada, e sobrescrevi com as novas estilizações, então eu fiz toda a estilização nas classes já existentes sobrescrevendo-as 
 eu não escrevi nenhuma classe nova;
-eu poderia cincluir a tag <b> no titulo pra coloar em bold a palavra carrocel em "Showcase <b> carousel </b>  default slider, mas não o fiz devido ao regulamento.
+eu poderia incluir a tag <b> no titulo pra coloar em bold a palavra carrocel em "Showcase <b> carousel </b>  default slider, mas não o fiz, devido ao regulamento.
 
 /* ajusta o tamanho e o positionamento da caixa principal da página*/
 .beon-slider{
@@ -82,7 +82,6 @@ eu poderia cincluir a tag <b> no titulo pra coloar em bold a palavra carrocel em
     width: 100%;
 }
 
-
 .beon-showcase__item-title {
     position: absolute;
     margin-top: 340px;
@@ -91,9 +90,6 @@ eu poderia cincluir a tag <b> no titulo pra coloar em bold a palavra carrocel em
     font-weight: normal;
     white-space: pre-wrap;
 }
-
-
-
 
 .beon-showcase__item-price--from{
     display: block;
@@ -113,10 +109,8 @@ eu poderia cincluir a tag <b> no titulo pra coloar em bold a palavra carrocel em
     margin-top: 5px;
 }
 
-
 .value{
     color: #4cbca8;
-    
 }
 
 .beon-button--primary{
@@ -135,14 +129,13 @@ eu poderia cincluir a tag <b> no titulo pra coloar em bold a palavra carrocel em
     display: none;
 }
 
-
- .priceFinalParcelado{
+.priceFinalParcelado{
     display: none;
  }
 
  .beon-showcase__item-price-box--simple{
- display:  block;
- margin-top: 27px;
+    display:  block;
+    margin-top: 27px;
 }
 
 .beon-slider .tns-nav button[data-nav].tns-nav-active{
