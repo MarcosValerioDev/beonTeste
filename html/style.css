@@ -4,7 +4,7 @@ sobrescrever as configurações do beon.
 /*E a partir dai eu fui nos elementos chaves onde eram necessarias as novas estilizações, e em todos eles eu peguei a ultima 
 classe declarada, e sobrescrevi com as novas estilizações, então eu fiz toda a estilização nas classes já existentes sobrescrevendo-as 
 eu não escrevi nenhuma classe nova;
-
+eu poderia cincluir a tag <b> no titulo pra coloar em bold a palavra carrocel em "Showcase <b> carousel </b>  default slider, mas não o fiz devido ao regulamento.
 
 /* ajusta o tamanho e o positionamento da caixa principal da página*/
 .beon-slider{
@@ -92,9 +92,13 @@ eu não escrevi nenhuma classe nova;
     white-space: pre-wrap;
 }
 
+
+
+
 .beon-showcase__item-price--from{
     display: block;
     margin-top: 10px;
+    text-decoration:line-through;
 }
 
 .beon-showcase__item-price--to{
