@@ -17,8 +17,6 @@ eu poderia incluir a tag <b> no titulo pra colocar em bold a palavra carrocel em
     --textBlack: #212529;
   }
 
-
-
 /* ajusta o tamanho e o positionamento da caixa principal da página*/
 .beon-slider{
     width: 100%;
@@ -55,7 +53,6 @@ eu poderia incluir a tag <b> no titulo pra colocar em bold a palavra carrocel em
     align-items: center;
     background-color: var(--vermelho);
 }
-
 
 /* Percentual desativa a visualização do valor da em dinheiro do desconto*/
 .beon-slider .beon-showcase__item-badge--off-value{
@@ -100,9 +97,7 @@ eu poderia incluir a tag <b> no titulo pra colocar em bold a palavra carrocel em
     font-weight: 420;
     white-space: pre-wrap;
     color: var(--textBlack);
-    
 }
-
 
 .beon-showcase__item-price-box--special, .beon-showcase__item-price-box--simple{
     display: flex;
@@ -154,8 +149,6 @@ color:var(--textGray);
 display: none;
     }
     
-
-
 .beon-showcase__item-price--to span:nth-child(2) span:nth-child(2), 
 .beon-showcase__item-price--to span:nth-child(2) span:nth-child(1),
 .beon-showcase__item-price--to span:nth-child(1){
@@ -203,7 +196,6 @@ display: none;
 .beon-showcase__item-price-box--special .beon-showcase__item-installments{
     margin-top: 7px;
 }
-
 
 .beon-interaction__installmentPrice .value, .beon-interaction__installmentPrice  .currency{
     font-weight: lighter;
