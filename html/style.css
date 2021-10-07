@@ -9,10 +9,14 @@ eu poderia incluir a tag <b> no titulo pra colocar em bold a palavra carrocel em
 
 /*Variáveis */
 :root {
-    --verde: #4cbca8;
-    --vermelho: #ff0000;
+    --borderButton: #0aeec2;
+    --verde: #4cbca7;
+    --vermelho: #d20b42;
     --branco: #fff;
+    --textGray: #838383;
+    --textBlack: #212529;
   }
+
 
 
 /* ajusta o tamanho e o positionamento da caixa principal da página*/
@@ -37,8 +41,8 @@ eu poderia incluir a tag <b> no titulo pra colocar em bold a palavra carrocel em
 
 /* Percentual de desconto arrendonda a caixa e posiciona*/
 .beon-slider .beon-showcase__item-badge--off{
-    margin-top: 10px;
-    margin-left: 20px;
+    margin-top: 20px;
+    margin-left: 40px;
     padding: 10px;
     padding-top: 8px;
     padding-bottom: 14px;
@@ -52,9 +56,6 @@ eu poderia incluir a tag <b> no titulo pra colocar em bold a palavra carrocel em
     background-color: var(--vermelho);
 }
 
-.tns-slide-active{
-    margin-left: 20px;
-}
 
 /* Percentual desativa a visualização do valor da em dinheiro do desconto*/
 .beon-slider .beon-showcase__item-badge--off-value{
@@ -91,34 +92,73 @@ eu poderia incluir a tag <b> no titulo pra colocar em bold a palavra carrocel em
     width: 100%;
 }
 
-.beon-showcase__item-title {
+.beon-showcase__item-title a span{
     position: absolute;
     margin-top: 340px;
     font-size: 16px;
     width: 95%;
-    font-weight: normal;
+    font-weight: 420;
     white-space: pre-wrap;
+    color: var(--textBlack);
+    
+}
+
+
+.beon-showcase__item-price-box--special, .beon-showcase__item-price-box--simple{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 }
 
 .beon-showcase__item-price--from{
     display: block;
+    width: 100%;
     margin-top: 10px;
     text-decoration:line-through;
 }
 
 .beon-showcase__item-price--to{
+    position: relative;
+    box-sizing: border-box;
     display: flex;
     flex-direction: row;
-    width: 100%;
     margin-top: 4px;
+    width: fit-content;
 }
 
 .beon-showcase__item-installments{
-    display: block;
-    margin-top: 5px;
+    position: relative;
+    display: inline-block;
+    box-sizing: border-box;
+    margin-left: 6px;
+    width: 47%;
+    margin-top: 5px; 
+    color:var(--textGray);
 }
 
-.value{
+.beon-showcase__price span:nth-child(1), .beon-showcase__price span:nth-child(2){
+    color: var(--verde);
+    font-size: 14px;
+}
+
+.beon-showcase__item-price--from span:nth-child(1), .beon-showcase__item-price--from .beon-showcase__price span:nth-child(2){
+    color:var(--textGray);
+}
+
+.beon-showcase__item-price--to span:nth-child(1){
+color:var(--textGray);
+}
+
+.beon-showcase__item-price--to .prefix{
+display: none;
+    }
+    
+
+
+.beon-showcase__item-price--to span:nth-child(2) span:nth-child(2), 
+.beon-showcase__item-price--to span:nth-child(2) span:nth-child(1),
+.beon-showcase__item-price--to span:nth-child(1){
     color: var(--verde);
 }
 
@@ -126,9 +166,9 @@ eu poderia incluir a tag <b> no titulo pra colocar em bold a palavra carrocel em
     display: block;
     box-sizing: border-box;
     background-color: var(--branco);
-    border: 2px;
-    border-color: var(--verde);
     border-style: solid;
+    border-color: var(--borderButton);
+    border-width: 3px;
     width: 95%;
     margin-left: 2.5%;
     margin-bottom: 10px;
@@ -142,12 +182,33 @@ eu poderia incluir a tag <b> no titulo pra colocar em bold a palavra carrocel em
     display: none;
  }
 
+
  .beon-showcase__item-price-box--simple{
-    display:  block;
-    margin-top: 27px;
+    margin-top: 36px;
+}
+
+.beon-showcase__item-price-box--simple span:first-child span:first-child{
+    margin-top: 3px;
 }
 
 .beon-slider .tns-nav button[data-nav].tns-nav-active{
     background-color: transparent;
     box-shadow: inset 0 0 0 2px var(--verde);
+}
+
+.beon-button__label--details{
+    color: var(--textBlack);
+}
+
+.beon-showcase__item-price-box--special .beon-showcase__item-installments{
+    margin-top: 7px;
+}
+
+
+.beon-interaction__installmentPrice .value, .beon-interaction__installmentPrice  .currency{
+    font-weight: lighter;
+} 
+
+.beon-showcase__item-installments .beon-interaction__installmentsCount{
+    font-weight: lighter;
 }
